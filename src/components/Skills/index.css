@@ -1,0 +1,101 @@
+.skill-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+.skills-layer{
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-bottom: 50px;
+    padding: 80px;
+    height: 100%;
+    padding-top: 40px;
+}
+.skill-img{
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+.skill-head{
+    font-size: 32px;
+    font-family: 'Copperplate Gothic Bold';
+    font-weight: bold;
+    color: #e86146;
+    text-align: left;
+    background-color: #9fd1b8;
+    padding: 5px;
+  }
+.skill-heading{
+    font-size: 25px;
+    color:#fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+.skill-head-cont{
+    display: flex;
+    margin-top: 40px;
+}
+.hr{
+    background-color: #fff;
+    width: 100%;
+}
+.front-skills-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-images{
+    height: 80px;
+    width: 80px;
+    margin-right: 28px;
+    margin-top: 25px;
+}
+.react-img{
+    height: 80px;
+    width: 150px;
+    margin-right: 28px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 912px){
+    .skills-layer{
+        padding: 30px;
+    }
+    .skills-images{
+        height: 50px;
+        width: 50px;
+        margin-right: 20px;
+        margin-top: 25px;
+    }
+    .react-img{
+        height: 60px;
+        width: 120px;
+        margin-right: 28px;
+        margin-top: 25px;
+    }
+}
+@media screen and (min-width: 768px){
+    .skills-layer{
+        height: 100vh;  
+    }
+}
+@media screen and (min-width: 412px){
+    .skills-layer{
+        height: 100vh;  
+    }
+}
+
+@media screen and (min-width: 390px){
+    .skills-layer{
+        height: 100vh;  
+    }
+}
+@media screen and (min-width: 1024px){
+    .skills-layer{
+        height: 100%;    
+    }
+}

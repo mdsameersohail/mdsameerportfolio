@@ -1,0 +1,162 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html {
+  font-size: 45%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 82px;
+  padding-top: 20px;
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top:0;
+  width: 100%;
+  z-index:1000;
+  background-color: transparent;
+}
+.header-heading{
+  font-family: 'Lobster';
+  font-size: 25px;
+  color: #fff;
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  font-family: 'Roboto';
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  display: inline-block;
+  position: relative;
+  padding: 4px 14px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  background: #112434;
+  color: #fff;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  color: #212529;
+  margin-top: 40px;
+
+}
+
+.navbar-link-active{
+  background: #112434;
+  color: #fff;
+}
+
+.fav-bars{
+  color: #fff;
+}
+
+
+
+  @media screen and (max-width: 912px){
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    color: #212529;
+    margin-left: 50px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .header {
+    position: relative;
+    height: 10%;
+    top:0;
+    width: 100%;
+    z-index:1000;
+    padding: 0 25px;
+    padding-top: 20px;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 80%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.9);
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-link:link,
+  .navbar-link:visited {
+    color: #fff;
+    font-size: 21px;
+  }
+  .navbar-link:hover,
+  .navbar-link:active {
+  background: white;
+  color: black;
+  }
+  .navbar-link-active{
+    background: none;
+    color:black;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+

@@ -1,0 +1,190 @@
+.home-container {
+    background-image: url('https://img.freepik.com/free-vector/black-background-with-binary-numbers_1055-1923.jpg?w=740&t=st=1685955183~exp=1685955783~hmac=d6d329e814bf3a9d6f6bf274d4d672d8b7219193bfa4a71a2296bab6947f0cc5');
+    background-size: cover;
+  }
+  .home-button-cont{
+    display: flex;
+    margin-top: 15px;
+  }
+  .products-loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 45%;
+  }
+
+  
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-mobile-img {
+    width: 206px;
+  }
+  
+  .home-desktop-img {
+    width:50%;
+    height: 110%;
+    margin-left: 25px;
+  }
+  
+  
+  .home-heading {
+    font-family: 'Copperplate Gothic Light';
+    font-weight: bold;
+    margin-top: 0px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .home-para1{
+    font-family: 'Bodoni MT';
+    font-size: 19px;
+    color: #e86146;
+  }
+
+  .home-para2{
+    font-family: 'Bodoni MT';
+    font-size: 17px;
+    color: white;
+  }
+
+  .follow-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 18px;
+}
+
+
+.link:link{
+  text-decoration: none;
+}
+  
+  
+  .home-description {
+    font-family: 'Garamond';
+    margin-top: 36px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #3b7be3;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  
+  
+  .home-button {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 15px;
+    background-color: #0967d2;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .home-button:hover{
+    background-color: transparent;
+    color: beige;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  .contact-img-cont{
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  .bottom-layer{
+    background-color: rgba(0,0,0,.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding: 150px;
+    height: 100vh;
+  }
+  .header-layer{
+    background-color: rgba(0,0,0,.9);
+  }
+
+  @media screen and (min-width: 913px) {
+    .bottom-layer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 80px;
+    }
+    .home-button {
+      font-size: 14px;
+    }
+    .home-description {
+      font-size: 20px;
+      margin-top: 0;
+      text-align: left;
+    }
+    .home-heading {
+      font-size: 40px;
+      text-align: left;
+    }
+    .home-mobile-img {
+      display: none;
+    }
+    .home-content {
+      align-items: flex-start;
+    }
+    .home-desktop-img {
+      width:40%;
+      height: 80%;
+      margin-left: 25px;
+    }
+  }
+
+  @media screen and (max-width: 912px) {
+    .home-desktop-img {
+      display: none;
+    }
+    .bottom-layer{
+      padding-top: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .home-heading{
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .home-button-cont{
+      display: flex;
+      margin-top: 10px;
+    }
+    .contact-img-cont{
+      margin-bottom: 0px;
+      margin-top: 5px;
+    }
+    .home-button{
+      margin-top:10px;
+    }
+    .home-description{
+      margin-top: 5px;
+      font-size: 15px;
+    }
+    .home-para2{
+      font-family: 'Bodoni MT';
+      font-size: 13px;
+    }
+  }
+  

@@ -1,0 +1,147 @@
+.text-cont{
+    display: flex;
+    margin-bottom: 50px;
+}
+.img-icon{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.heading{
+    color: #fff;
+    margin-top: 21px;
+    font-size: 15px;
+}
+.social-cont{
+    display: flex;
+    flex-direction: column;
+}
+.social-heading{
+    font-size: 20px;
+    font-family: Bree Serif;
+    color: #fff;
+}
+.social-hr{
+    background-color: #fff;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.email-sent-para{
+    color: white;
+    text-align: center;
+    font-family: Bree serif;
+    font-size: 26px;
+}
+.email-sent-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-img{
+    height: 105px;
+    width: 105px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.contact-form-cont{
+    background-color: transparent;
+    height: 100%;
+    width: 400px;
+    padding: 20px;
+    
+}
+.contact-main-head{
+    color: white;
+    font-family: serif;
+}
+.form-group {
+    position: relative;
+    padding: 20px 0;
+    margin: auto;
+    max-width: 100%;
+}
+
+.form-group input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.4px solid #d8d7d7;
+    font-size: 15px;
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    color:white;
+    font-family: '"Times New Roman"';
+}
+    
+.form-group label {
+    color: #f0eaea;
+    font-size: 16px;
+    font-weight: 100;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    transform: translateY(30px);
+    transition: all 0.2s ease-in-out;
+    left: 0px;
+    font-family: 'Bree serif';
+}
+    
+.form-group input:valid,
+.form-group input:focus {
+    border-bottom-color: rgba(130, 195, 235, 0.801);
+    outline: none;
+}
+    
+.form-group input:valid + label,
+.form-group input:focus + label {
+    color: rgb(247, 247, 247);
+    font-size: 14px;
+    transform: translateY(0);
+}
+.contact-message-cont{
+    display: flex;
+    flex-direction: column;
+}
+.contact-para{
+    color: white;
+    font-family: Bree serif;
+    font-size: 18px;
+}
+.contact-button-cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-button{
+    background: #112434;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size:17px;
+}
+.text-area{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px){
+    .contact-form-cont{
+        margin-top: 30px;
+        padding: 40px;
+    }
+    .email-sent-cont{
+        margin-top: 80px;
+        height: 50vh;
+    }
+    .email-sent-para{
+        font-size: 18px;
+    }
+}
+
+@media screen and (width:820px){
+    .contact-layer{
+        height: 100vh;
+    }
+}
